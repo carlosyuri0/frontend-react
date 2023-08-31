@@ -27,3 +27,8 @@ header nav ul li a{
     color: #000000;
     text-decoration: none;
 }
+
+header nav ul li a.active {
+    border-bottom: 5px solid #6e6565;
+    padding-bottom: 5px;
+}

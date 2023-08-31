@@ -4,7 +4,7 @@ import Content from "../layout/Content"
 import Footer from "../layout/Footer"
 
 const QuemSomos = () => {
-    return <>
+    return ( <>
         <Header />
         <div id="main">
             <Sidebar />
@@ -13,6 +13,7 @@ const QuemSomos = () => {
         </div>
         <Footer />
     </>
+    )
 }
 
 export default QuemSomos
