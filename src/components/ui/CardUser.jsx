@@ -1,12 +1,12 @@
 import './CardUser.css'
 
-const CardUser = () => {
+const CardUser = ({user}) => {
   return (
     <div className="card-user">
-        <img src="https://avatars.githubusercontent.com/u/131290170?v=4" alt="Carlos Yuri"></img>
+        <img src={user.photo} alt={user.name} />
         <div>
-            <h3>Carlos Yuri</h3>
-            <span>carlosyuri@exemplo.com</span>
+            <h3>{user.name}</h3>
+            <span>{user.email}</span>
         </div>
     </div>
   )

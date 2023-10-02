@@ -1,5 +1,6 @@
 #content{
     width: 700px;
     height: 800px;
+    min-height: 500px;
     background: #e4e4e4;
 }
