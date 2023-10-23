@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer>
-        <span>Renan Cavichi @ 2023 - Logado como: {nameUser}</span>
+        <span>Coffe & Mountain @ 2023 - Logado como: {nameUser}</span>
     </footer>
   )
 }
