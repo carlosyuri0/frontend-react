@@ -50,7 +50,7 @@ const CardUser = ({user, users, setUsers}) => {
 
     if(response.ok){
       const data = await response.json()
-      alert(data.success)
+      alert('Dado(s) Editado(s) com Sucesso!', data.success)
       setShowEditModal(false)
       const newUsers = users.map((userC)=>{
         if(userC.id == user.id){
@@ -104,9 +104,6 @@ const CardUser = ({user, users, setUsers}) => {
             <Button variant="primary" type="submit">Editar</Button>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={() => setShowEditModal(false)}>Close</Button>
-        </Modal.Footer>
       </Modal>
     </>
   )

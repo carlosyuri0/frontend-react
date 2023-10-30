@@ -48,7 +48,7 @@ const QuemSomos = () => {
 
       if(response.ok){
         const data = await response.json()
-        alert(data.success)
+        alert('Usuário Cadastrado com Sucesso!', data.success)
         setShowModal(false)
         setUsers([...users, data.user])
       }
@@ -96,9 +96,6 @@ const QuemSomos = () => {
                     <Button variant="primary" type="submit">Cadastrar</Button>
                   </Form>
                 </Modal.Body>
-                <Modal.Footer>
-                  <Button onClick={() => setShowModal(false)}>Close</Button>
-                </Modal.Footer>
               </Modal>
 
               {
